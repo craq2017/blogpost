@@ -9,10 +9,9 @@ metadata:
   name: httpd
   selfLink: /apis/route.openshift.io/v1/namespaces/simple-app/routes/httpd
 spec:
-  host: httpd-simple-app.apps-crc.testing
+  host: httpd-simple-app.apps.ocp4.rh.lab
   port:
     targetPort: 8080
-  subdomain: ""
   to:
     kind: Service
     name: httpd
